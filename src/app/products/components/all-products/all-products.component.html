@@ -1,0 +1,37 @@
+<select
+  class="form-select"
+  aria-label="Default select example"
+  (change)="filterByCatogorie($event)"
+>
+  <option value="all" selected>ALL</option>
+  <option value="{{ option }}" *ngFor="let option of catogorie">
+    {{ option }}
+  </option>
+</select>
+
+<div class="row" *ngIf="!Loading">
+  <div
+    class="col-md-3 the-item"
+    *ngFor="let item of products"
+    
+  >
+    <app-product [data]="item" (item)="AddToCart($event)"></app-product>
+  </div>
+</div>
+
+<div class="spinner text-center w-100" *ngIf="Loading">
+  <div class="lds-default">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>

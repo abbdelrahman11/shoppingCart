@@ -1,0 +1,27 @@
+<div class="product-details">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          style="z-index: -1"
+          src="{{ data.image }}"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <ul>
+            <li><strong>Title:</strong>{{ data.title }}</li>
+            <li><strong>Catogory:</strong>{{ data.category }}</li>
+            <li><strong>Description:</strong>{{ data.description }}</li>
+            <li><strong>Rate:</strong>{{ data.rating.rate }}</li>
+            <li><strong>Count:</strong>{{ data.rating.count }}</li>
+            <li><strong>Price:</strong> {{ data.price }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

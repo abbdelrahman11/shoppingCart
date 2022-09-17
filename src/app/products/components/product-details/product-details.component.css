@@ -1,0 +1,21 @@
+
+.product-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:4%
+}
+.card{
+    width: 80% ;
+}
+.card-body{
+    text-align: left;
+    margin-left: 31px;
+}
+ul{
+    list-style: none;
+    line-height: 1.8;
+}
+strong{
+    margin: 4px;
+}
